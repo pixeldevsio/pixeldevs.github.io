@@ -1,0 +1,17 @@
+{
+  "name": "personal-site-html",
+  "version": "1.0.0",
+  "description": "Personal Site for PixelDevs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "npx tailwindcss -i ./src/style.css -o ./public/style.css --watch",
+    "build": "npx tailwindcss -i ./src/style.css -o ./public/style.css --minify && html-minifier --input-dir src --output-dir public --file-ext html --remove-comments --collapse-whitespace --minify-js true --minify-css true"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.0",
+    "tailwindcss": "^3.0.7"
+  }
+}
